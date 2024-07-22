@@ -127,6 +127,6 @@
 //   ['Jane Doe', 10, 52, 'B'],
 //   ['Petr Chess', 5, 24, 'F'],
 //   ['Ling Jess', 28, 43, 'A'],
-//   ['Ben Liard', 16, 51, 'B']
+//   ['Ben Liard', 16, 51, '  B']
 // ]
 // console.log(MathScore[4][3]);

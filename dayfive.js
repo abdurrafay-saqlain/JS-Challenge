@@ -85,17 +85,19 @@
 
 // Task 10
 
-function compose(g,f) {
-  return function(value){
-    return g(f(value))
-  }
-}
-function Square(x) {
-  return x*x
-}
-function addOne(x) {
-  return x+1
-}
-const composedFunction = compose(Square,addOne)
-const result = composedFunction(5)
-console.log(result);
+// function compose(g,f) {
+//   return function(value){
+//     return g(f(value))
+//   }
+// }
+// function Square(x) {
+//   return x*x
+// }
+// function addOne(x) {
+//   return x+1
+// }
+// const composedFunction = compose(Square,addOne)
+// const result = composedFunction(5)
+// console.log(result);
+
+

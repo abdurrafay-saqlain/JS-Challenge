@@ -74,4 +74,4 @@ let lastName = "Doe"
 let person = {}
 person['firstName'] = firstName
 person['lastName'] = lastName
-console.log(person);
+console.log(person);  
