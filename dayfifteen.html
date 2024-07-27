@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<!-- counter.js becomes available 
+	at execution time-->
+	<script src="counter.js"></script> 
+</head> 
+
+<body> 
+	<h1 style="color: blue;"> 
+		Private Counter using Closure 
+	</h1> 
+
+	<!-- This div displays the value of 
+	private counter-->
+	<div id="counter_div" style= 
+		"margin-left: 5%; color: red;"> 
+
+		<!-- Default value of counter is zero-->
+		<h2>0</h2> 
+	</div> 
+
+	<!-- Buttons for incrementing and 
+	decrementing the value of private counter-->
+	<button onclick="counterHandler(this)"
+		value="1"> 
+		Increment 
+	</button> 
+	
+	<button onclick="counterHandler(this)"
+		value="0"> 
+		Decrement 
+	</button> 
+</body> 
+<!-- <script>
+  function inner() {
+    let counter = 0
+    function innerincrement(){
+    counter ++
+    }
+    function innerdecrement(){
+      counter --
+    }
+    function logic(value){
+      if (value === '1') {
+        innerincrement()
+      }
+      else if (value === '0'){
+      innerdecrement()
+      }
+      return counter
+    }
+    return logic
+  }
+  const closure =inner()
+  function counterHandler (objButton){
+    let count = closure(objButton.value)
+    document.getElementById('counter_div').innerHTML = "<h2>" + count + "</h2>"
+  }
+</script> -->
+
+
+<script>
+  function RandomNo(){
+    const id = Math.random().toString(16).slice(2)
+  }
+  function inner() {
+    id++
+    return inner
+  }
+  const randomgenerate = RandomNo()
+  randomgenerate()
+  console.log(randomgenerate());
+</script>
+</html>
